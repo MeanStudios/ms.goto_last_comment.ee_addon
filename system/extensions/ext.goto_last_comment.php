@@ -1,12 +1,12 @@
 <?php  if ( ! defined('EXT')) exit('No direct script access allowed');
 /**
- * Goto Comment
+ * Goto Last Comment
  *
- * Will automatcially scroll the page down to the last comment after it's been posted.
+ * Will automatcially scroll the page down to the last comment after it has been posted.
  *
  * @author		Cody Lundquist
  * @license		http://creativecommons.org/licenses/by-sa/3.0/
- * @link		http://www.codysplace.com
+ * @link		http://meanstudios.com
  * @since		Version 1.1.0
  * @filesource
  *
@@ -16,22 +16,22 @@
  * San Francisco, California, 94105, USA.
  *
  */
-class Goto_last_comment_ext {
+class Goto_last_comment {
 
 	var $settings		= array();
 	var $name			= 'Goto Last Comment';
-    var $class_name     = 'Goto_last_comment_ext';
+    var $class_name     = 'Goto_last_comment';
 	var $version		= '1.1.0';
-	var $description	= 'Will automatcially scroll the page down to the last comment after it\'s been posted.';
+	var $description	= 'Will automatcially scroll the page down to the last comment after it has been posted.';
 	var $settings_exist	= 'n';
 	var $docs_url		= 'http://expressionengine.com/forums/viewthread/104390/';
 
-	function Goto_last_comment_ext($settings='')
+	function Goto_last_comment($settings='')
 	{
 		$this->settings = $settings;
     }
 
-    function activate_extension($settings='')
+    function activate_extension()
 	{
 		global $DB;
 
@@ -92,8 +92,6 @@ class Goto_last_comment_ext {
 		            WHERE class = '{$this->class_name}'");
 	}
 
-	// --------------------------------------------------------------------
-
 	function disable_extension()
 	{
 		global $DB;
@@ -103,15 +101,6 @@ class Goto_last_comment_ext {
 		            WHERE class='{$this->class_name}'");
 	}
 
-	/**
-	 * Adds script tags to the head of CP pages
-	 *
-	 * We add the jQuery libraries to the top of the head tag to ensure that they
-	 * are before any other javascript that could use the libraries.
-	 *
-	 * @param string $html Final html of the control panel before display
-	 * @return string Modified HTML
-	 */
 	function comment_form_hidden_fields($hidden_fields)
 	{
 		global $EXT, $IN;
@@ -161,10 +150,9 @@ class Goto_last_comment_ext {
 		return $tagdata;
 	}
 
-	// --------------------------------------------------------------------
 
 }
-// END CLASS Goto_comment_ext
+// END CLASS Goto_last_comment
 
-/* End of file ext.goto_comment_ext.php */
-/* Location: ./system/extensions/ext.goto_comment_ext.php */
+/* End of file ext.goto_last_comment.php */
+/* Location: ./system/extensions/ext.goto_last_comment.php */
