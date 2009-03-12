@@ -1,0 +1,14 @@
+Greetings,
+
+Goto Last Comment is an ExpressionEngine extension which automatically scrolls down to the last comment on a channel entry after it's been submitted.
+
+*Setup*
+
+__For people upgrading from a version earlier than 1.1.0, I recommend disabling the extension first and then uploading the new files.__
+
+# Download the extension and place it in it's correct spot.
+# Enable the extension
+# Put {last_comment} inside your {exp:comment:entries} tagpair towards the top.  Just under the opening tag would be the best spot.  This variable will be replaced with the anchor tag so wherever you put this variable will be where the anchor tag will be.
+# Enjoy :)
+
+Let me know if you have any questions.
