@@ -2,7 +2,7 @@
 /**
  * Goto Comment
  *
- * Will automatcially scroll the page down to the last comment after it's being posted.
+ * Will automatcially scroll the page down to the last comment after it's been posted.
  *
  * @author		Cody Lundquist
  * @license		http://creativecommons.org/licenses/by-sa/3.0/
@@ -22,7 +22,7 @@ class Goto_last_comment_ext {
 	var $name			= 'Goto Last Comment';
     var $class_name     = 'Goto_last_comment_ext';
 	var $version		= '1.1.0';
-	var $description	= 'Will automatcially scroll the page down to the last comment after it\'s being posted.';
+	var $description	= 'Will automatcially scroll the page down to the last comment after it\'s been posted.';
 	var $settings_exist	= 'n';
 	var $docs_url		= 'http://expressionengine.com/forums/viewthread/104390/';
 
